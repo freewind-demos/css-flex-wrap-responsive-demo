@@ -1,11 +1,30 @@
-#main {
-    --bg-color1: green;
-    border: 1px solid red;
-    padding: 20px;
-    width: 400px;
-    height: 300px;
+body {
+    color: white;
 }
 
-#inner {
-    background-color: var(--bg-color1);
+#main {
+    border: 3px solid red;
+    height: 300px;
+    display: flex;
+}
+
+#a {
+    background-color: black;
+    flex-grow: 1;
+    flex-basis: 300px;
+    flex-shrink: 0;
+}
+
+#b {
+    background-color: green;
+    flex-grow: 1;
+    flex-basis: 300px;
+    flex-shrink: 1;
+}
+
+#c {
+    background-color: blue;
+    flex-grow: 1;
+    flex-basis: 300px;
+    flex-shrink: 9;
 }
